@@ -1,0 +1,92 @@
+body {
+  color: rgb(0, 50, 50);
+}
+
+header > h2,
+main > h2,
+main > p,
+footer > p {
+  text-align: center;
+}
+
+header > h2 {
+  color: white;
+  background: rgb(0, 50, 50);
+  margin: 0;
+  padding: 20px 0px;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+main {
+  margin: 0px 15px;
+}
+
+main > h2 {
+  margin-bottom: 0px;
+}
+
+main > p {
+  margin: 10px 0px 2px 0px;
+  color: lightgray;
+  border-bottom: 4px solid rgb(0, 50, 50);
+  padding-bottom: 35px;
+}
+
+fieldset {
+  border-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input,
+select,
+textarea {
+  background: rgb(236, 236, 236);
+  margin-bottom: 15px;
+  border-style: none;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+textarea {
+  height: 70px;
+}
+
+button {
+  color: white;
+  background: rgb(0, 180, 180);
+  padding: 15px;
+  border-style: none;  
+  border-radius: 5px;
+}
+
+footer > p {
+  margin: 30px;
+  color: rgb(200, 200, 200);
+  font-style: italic;
+  font-size: .9em;
+}
+
+.contact-fieldset,
+.news-fieldset {
+  border-top: 2px solid rgb(0, 50, 50);
+}
+
+.fieldset-flex-container > input:last-child {
+  width: 40%;
+}
+
+::placeholder {
+  color: rgb(200, 200, 200);
+  text-align: right;
+  font-style: italic;
+  font-size: .8em;
+  padding-right: 5px;
+}

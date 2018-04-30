@@ -1,0 +1,7 @@
+body,
+header,
+form,
+.fieldset-flex-container {
+  display: flex;
+  flex-direction: column;
+}
