@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>The Code Review</title>
@@ -124,16 +124,16 @@
 
             <div class="news-flex-container">
               <p>Select the newsletters you would like to receive</p>
-              <label><input type="checkbox" name="news" value="html_news"> HTML News</label>
-              <label><input type="checkbox" name="news" value="css_news"> CSS News</label>
-              <label><input type="checkbox" name="news" value="js_news"> Javascript News</label>
+              <label for="html_news"><input type="checkbox" name="news" id="html_news" value="html_news"> HTML News</label>
+              <label for="css_news"><input type="checkbox" name="news" id="css_news" value="css_news"> CSS News</label>
+              <label for="js_news"><input type="checkbox" name="news" id="js_news" value="js_news"> Javascript News</label>
 
               <p>Newsletter format</p>
-              <label><input type="radio" name="format" value="html_format"> HTML</label>
-              <label><input type="radio" name="format" value="plain_format"> Plain text</label>
+              <label for="html_format"><input type="radio" name="format" id="html_format" value="html_format"> HTML</label>
+              <label for="plain_format"><input type="radio" name="format" id="plain_format" value="plain_format"> Plain text</label>
 
               <label for="other">Other topics you'd like to hear about</label>
-              <textarea id="other" name="other_topics"></textarea>
+              <textarea id="other" name="other_topics" placeholder="Other topics..."></textarea>
             </div>
           </fieldset>
         </section>  

@@ -61,7 +61,6 @@ textarea {
   border-style: none;
   border-radius: 5px;
   padding: 20px;
-  -webkit-transition: background .5s; /* For Safari 3.1 to 6.0 */
   transition: background .5s;
 }
 
@@ -107,6 +106,10 @@ footer > p {
   font-style: italic;
   font-size: .8em;
   padding-right: 5px;
+}
+
+textarea::placeholder {
+  text-align: left;
 }
 
 /* ================================= 
