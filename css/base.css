@@ -1,5 +1,12 @@
 body {
   color: rgb(0, 50, 50);
+  background: rgba(250, 250, 210, 0.1);
+  font-family: 'Merriweather', serif;
+}
+
+footer {
+  background: rgba(0, 50, 50, 0.03);
+  margin-top: 50px;
 }
 
 header > h2,
@@ -14,6 +21,7 @@ header > h2 {
   background: rgb(0, 50, 50);
   margin: 0;
   padding: 20px 0px;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -53,6 +61,14 @@ textarea {
   border-style: none;
   border-radius: 5px;
   padding: 20px;
+  -webkit-transition: background .5s; /* For Safari 3.1 to 6.0 */
+  transition: background .5s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  background: white;
 }
 
 textarea {
@@ -77,9 +93,11 @@ footer > p {
 .contact-fieldset,
 .news-fieldset {
   border-top: 2px solid rgb(0, 50, 50);
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
-.fieldset-flex-container > input:last-child {
+.contact-flex-container > input:last-child {
   width: 40%;
 }
 
@@ -89,4 +107,37 @@ footer > p {
   font-style: italic;
   font-size: .8em;
   padding-right: 5px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+  main {
+    margin: 40px 100px 0px 100px;
+  }
+
+  textarea {
+    width: 528px;
+  }
+
+  button {
+    width: 568px;
+  }
+
+  .contact-flex-item > input {
+    width: 375px;
+  }
+
+  .contact-flex-item > select {
+    width: 415px;
+  }
+
+  .contact-flex-container .contact-flex-item:last-child > input,
+  .contact-flex-item > label {
+    width: 150px;
+  }
+
 }

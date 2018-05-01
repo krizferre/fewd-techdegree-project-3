@@ -1,7 +1,22 @@
 body,
 header,
 form,
-.fieldset-flex-container {
+.contact-flex-item,
+.news-flex-container {
   display: flex;
   flex-direction: column;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+  .contact-flex-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
 }
